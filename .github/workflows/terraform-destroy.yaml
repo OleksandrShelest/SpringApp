@@ -44,7 +44,7 @@ jobs:
 
       - name: Delete S3 bucket (Terraform State)
         run: |
-          bucket={{ env.S3_BUCKET }}
+          bucket=${{ env.S3_BUCKET }}
           token=""
           
           while : ; do
